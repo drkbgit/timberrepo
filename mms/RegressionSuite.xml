@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="timber" verbose="1">
+    <test name="HomePageTests">
+        <parameter name="platform" value="windows"/>
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserVersion" value=""/>
+        <classes>
+            <class name="com.independent.mms.tests.HomePageTest"/>
+        </classes>
+    </test>
+    <test name="RegistrationTests">
+        <parameter name="platform" value="windows"/>
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="browserVersion" value=""/>
+        <classes>
+            <class name="com.independent.mms.tests.RegistrationTest"/>
+        </classes>
+    </test>
+</suite>
