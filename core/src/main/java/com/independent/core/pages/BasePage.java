@@ -32,7 +32,7 @@ public class BasePage {
     public String getCurrentUrl(){
         try{
             return driver.getCurrentUrl();
-        }catch(Exception e){
+        }catch(Exception  e){
             return  "";
         }
 
