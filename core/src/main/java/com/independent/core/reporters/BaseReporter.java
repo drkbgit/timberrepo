@@ -3,6 +3,7 @@ package com.independent.core.reporters;
 import org.testng.IReporter;
 import org.testng.ISuite;
 import org.testng.xml.XmlSuite;
+import org.testng.Reporter;
 
 import java.util.List;
 
@@ -13,5 +14,9 @@ import java.util.List;
 public class BaseReporter implements IReporter{
     public void generateReport(List<XmlSuite> xmlSuite, List<ISuite> iSuites,String outputDirectory){
 
+    }
+
+    public static void report(String message){
+        Reporter.log(message);
     }
 }
